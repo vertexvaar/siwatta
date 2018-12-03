@@ -1,0 +1,9 @@
+{
+    "name": "vertexvaar/siwatta",
+    "description": "Shit i write all the time again",
+    "autoload": {
+        "files": [
+            "functions.php"
+        ]
+    }
+}
