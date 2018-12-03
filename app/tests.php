@@ -13,3 +13,21 @@ if ($array === array_index_by_column(array_values($array), 'a')) {
 } else {
     echo 'array_index_by_column failed' . PHP_EOL;
 }
+
+$string = 'I have nuggets';
+$array = [
+    'I',
+    false,
+    [],
+    'have',
+    0,
+    '0',
+    'nuggets',
+    null,
+];
+
+if ($string === array_filter_implode($array, ' ')) {
+    echo 'array_filter_implode success' . PHP_EOL;
+} else {
+    echo 'array_filter_implode failed' . PHP_EOL;
+}
