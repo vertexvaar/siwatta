@@ -13,3 +13,10 @@ if (!function_exists('array_filter_implode')) {
         return implode($glue, array_filter($array));
     }
 }
+
+if (!function_exists('startsWith')) {
+    public function startsWith(string $haystack, string $needle): bool
+    {
+        return $needle === substr($haystack, 0, strlen($needle));
+    }
+}
